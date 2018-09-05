@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	<servlet>
+   		<servlet-name>Serve</servlet-name>
+    	<servlet-class>common.Serve</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+    	<servlet-name>Serve</servlet-name>
+    	<url-pattern>/serve</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-name>GuardarBebida</servlet-name>
+		<servlet-class>controlador.Bebida.GuardarBebida</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GuardarBebida</servlet-name>
+		<url-pattern>/guardarbebida</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaBebida</servlet-name>
+		<servlet-class>controlador.Bebida.ListaBebida</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaBebida</servlet-name>
+		<url-pattern>/listabebida</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EliminarBebida</servlet-name>
+		<url-pattern>/eliminarbebida</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EliminarBebida</servlet-name>
+		<servlet-class>controlador.Bebida.EliminarBebida</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ModificarBebida</servlet-name>
+		<servlet-class>controlador.Bebida.ModificarBebida</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarBebida</servlet-name>
+		<url-pattern>/modificarbebida</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BuscarBebida</servlet-name>
+		<servlet-class>controlador.Bebida.BuscarBebida</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>BuscarBebida</servlet-name>
+		<url-pattern>/buscarbebida</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GuardarPlato</servlet-name>
+		<servlet-class>controlador.Plato.GuardarPlato</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GuardarPlato</servlet-name>
+		<url-pattern>/guardarplato</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaPlato</servlet-name>
+		<servlet-class>controlador.Plato.ListaPlato</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPlato</servlet-name>
+		<url-pattern>/listaplato</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EliminarPlato</servlet-name>
+		<servlet-class>controlador.Plato.EliminarPlato</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarPlato</servlet-name>
+		<url-pattern>/eliminarplato</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModificarPlato</servlet-name>
+		<servlet-class>controlador.Plato.ModificarPlato</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarPlato</servlet-name>
+		<url-pattern>/modificarplato</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BuscarPlato</servlet-name>
+		<servlet-class>controlador.Plato.BuscarPlato</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuscarPlato</servlet-name>
+		<url-pattern>/buscarplato</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GuardarMesa</servlet-name>
+		<servlet-class>controlador.Mesa.GuardarMesa</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GuardarMesa</servlet-name>
+		<url-pattern>/guardarmesa</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaMesa</servlet-name>
+		<servlet-class>controlador.Mesa.ListaMesa</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaMesa</servlet-name>
+		<url-pattern>/listamesa</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EliminarMesa</servlet-name>
+		<servlet-class>controlador.Mesa.EliminarMesa</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EliminarMesa</servlet-name>
+		<url-pattern>/eliminarmesa</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModificarMesa</servlet-name>
+		<servlet-class>controlador.Mesa.ModificarMesa</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarMesa</servlet-name>
+		<url-pattern>/modificarmesa</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BuscarMesa</servlet-name>
+		<servlet-class>controlador.Mesa.BuscarMesa</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>BuscarMesa</servlet-name>
+		<url-pattern>/buscarmesa</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaPlatoMenu</servlet-name>
+		<servlet-class>controlador.Menu.ListaPlatosMenu</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPlatoMenu</servlet-name>
+		<url-pattern>/listaplatomenu</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaMenuSeleccionado</servlet-name>
+		<servlet-class>controlador.Menu.ListaMenuSeleccionado</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaMenuSeleccionado</servlet-name>
+		<url-pattern>/listaseleccion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GuardarMenu</servlet-name>
+		<servlet-class>controlador.Menu.GuardarMenu</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GuardarMenu</servlet-name>
+		<url-pattern>/guardarmenu</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaMenuDia</servlet-name>
+		<servlet-class>controlador.MenuUsuario.ListaMenuDia</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaMenuDia</servlet-name>
+		<url-pattern>/listamenudia</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaPlatoMenuUser</servlet-name>
+		<servlet-class>controlador.MenuUsuario.ListaPlatoMenuUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPlatoMenuUser</servlet-name>
+		<url-pattern>/listaplatomenuuser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaBebidaMenuUser</servlet-name>
+		<servlet-class>controlador.MenuUsuario.ListaBebidaMenuUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaBebidaMenuUser</servlet-name>
+		<url-pattern>/listabebidamenuuser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaSeleccionUser</servlet-name>
+		<servlet-class>controlador.MenuUsuario.ListaSeleccionUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaSeleccionUser</servlet-name>
+		<url-pattern>/listaseleccionuser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GuardarPedido</servlet-name>
+		<servlet-class>controlador.Pedido.GuardarPedido</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GuardarPedido</servlet-name>
+		<url-pattern>/guardarpedido</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>SaveTipo</servlet-name>
+		<servlet-class>controlador.SaveTipo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveTipo</servlet-name>
+		<url-pattern>/saveTipo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListUsuario</servlet-name>
+		<servlet-class>controlador.ListUsuario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListUsuario</servlet-name>
+		<url-pattern>/listUsuario</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletPermisos</servlet-name>
+		<servlet-class>controlador.ServletPermisos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletPermisos</servlet-name>
+		<url-pattern>/servletPermisos</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListPermisos</servlet-name>
+		<servlet-class>controlador.ListPermisos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListPermisos</servlet-name>
+		<url-pattern>/listPermisos</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>SaveUsuario</servlet-name>
+		<servlet-class>controlador.SaveUsuario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveUsuario</servlet-name>
+		<url-pattern>/saveUsuario</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CambiarPermisos</servlet-name>
+		<servlet-class>controlador.CambiarPermisos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CambiarPermisos</servlet-name>
+		<url-pattern>/cambiarPermisos</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>GmailServlet</servlet-name>
+		<servlet-class>controlador.GmailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GmailServlet</servlet-name>
+		<url-pattern>/gmailServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SaveRecurso</servlet-name>
+		<servlet-class>controlador.SaveRecurso</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveRecurso</servlet-name>
+		<url-pattern>/saveRecurso</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FormRegistrarProducto</servlet-name>
+		<servlet-class>common.mostrarFormRegistrarProducto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FormRegistrarProducto</servlet-name>
+		<url-pattern>/formRegistrarProducto</url-pattern>
+	</servlet-mapping>
+	
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,14 @@
+<!-- Indices written at Thu, 21 Jul 2016 05:43:32 PET -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Menu_Dia" ancestor="false" source="auto">
+        <property name="anio" direction="desc"/>
+        <property name="mes" direction="desc"/>
+        <property name="dia" direction="desc"/>
+        <property name="hora" direction="desc"/>
+        <property name="minuto" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

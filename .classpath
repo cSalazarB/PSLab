@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/windows/MI_CARPETA_PERSONAL/2016_I/javamail1_4_7/javamail-1.4.7/lib/dsn.jar"/>
+	<classpathentry kind="lib" path="/windows/MI_CARPETA_PERSONAL/2016_I/javamail1_4_7/javamail-1.4.7/lib/gimap.jar"/>
+	<classpathentry kind="lib" path="/windows/MI_CARPETA_PERSONAL/2016_I/javamail1_4_7/javamail-1.4.7/lib/imap.jar"/>
+	<classpathentry kind="lib" path="/windows/MI_CARPETA_PERSONAL/2016_I/javamail1_4_7/javamail-1.4.7/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="/windows/MI_CARPETA_PERSONAL/2016_I/javamail1_4_7/javamail-1.4.7/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="/windows/MI_CARPETA_PERSONAL/2016_I/javamail1_4_7/javamail-1.4.7/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="/windows/MI_CARPETA_PERSONAL/2016_I/javamail1_4_7/javamail-1.4.7/mail.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
